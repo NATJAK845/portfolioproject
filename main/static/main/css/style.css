@@ -1,0 +1,62 @@
+.pfp-image {
+    width: 300px;          
+    height: 300px;       
+    border-radius: 50%;       
+    border: 2px solid #fff; 
+}
+
+.pfp-image1 {
+    width: 80px;   
+    height: 80px;
+    border-radius: 50%; 
+    display: block;
+    border: 2px solid #fff;    
+    margin: 20px auto;
+    margin-bottom: 30px; 
+}
+/* home PFP ends here */
+
+/* navbar icon starts here */
+.nav-item1 {
+    text-decoration: none;
+}
+
+.w3-sidebar .nav-item1:hover i {
+    color: black !important;
+    text-decoration: none;
+}
+
+.w3-sidebar .nav-item1:hover p {
+    color: black !important;
+    text-decoration: none;
+}
+
+/*project grid css starts here */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+    justify-items: center; 
+}
+
+.project-card {
+    width: 100%; 
+    max-width: 300px; /* optional: set a max width per card */
+    overflow: hidden;
+    border-radius: 10px; /* rounded corners for images */
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;   /* keeps image nicely cropped */
+    border-radius: 10px; /* rounded corners */
+}
+
+/* Education Tab starts here */
+
+.edu-image {
+    width: 600px !important;          
+    height: 400px !important;       
+}

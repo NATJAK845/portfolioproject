@@ -1,0 +1,176 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>PythonAnywhere</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+</head>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="{% static 'main/images/image1.jpg' %}" class="pfp-image1">
+  <a href="https://Nathaneiel_Zane_Jakosalem.pythonanywhere.com/#home" class="nav-item1">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="https://Nathaneiel_Zane_Jakosalem.pythonanywhere.com/#about" class="nav-item1">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="https://Nathaneiel_Zane_Jakosalem.pythonanywhere.com/#skills" class="nav-item1">
+    <i class="fa fa-bullseye w3-xxlarge"></i>
+    <p>SKILLS</p>
+  </a>
+    <a href="https://Nathaneiel_Zane_Jakosalem.pythonanywhere.com/#education" class="nav-item1">
+    <i class="fa fa-book w3-xxlarge"></i>
+    <p>EDUCATION</p>
+  </a>
+    <a href="https://Nathaneiel_Zane_Jakosalem.pythonanywhere.com/#contacts" class="nav-item1">
+    <i class="fa fa-address-book w3-xxlarge"></i>
+    <p>CONTACTS</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="https://Nathaneiel_Zane_Jakosalem.pythonanywhere.com/#home" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="https://Nathaneiel_Zane_Jakosalem.pythonanywhere.com/#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="https://Nathaneiel_Zane_Jakosalem.pythonanywhere.com/#skills" class="w3-bar-item w3-button" style="width:25% !important">SKILLS</a>
+    <a href="https://Nathaneiel_Zane_Jakosalem.pythonanywhere.com/#education" class="w3-bar-item w3-button" style="width:25% !important">EDUCATION</a>
+    <a href="https://Nathaneiel_Zane_Jakosalem.pythonanywhere.com/#contacts" class="w3-bar-item w3-button" style="width:25% !important">CONTACTS</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<section class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm </span>{{ name }}.</h1>
+    <p>{{ role }}.</p>
+    <img src="{% static 'main/images/image1.jpg' %}" alt="pfp" class="pfp-image">
+  </header>
+
+  <section class="w3-content w3-justify w3-text-white w3-padding-63">
+    <h2 class="w3-text-white">My Motto</h2>    
+    <hr style="width:200px" class="section-line1">
+    <p style="font-size: large;">Its all or nothing.
+    </p>
+  </section>
+
+  <!-- About Section -->
+  <section class="w3-padding-64 w3-content w3-text-white" id="about">
+    <h2 class="w3-text-light-grey">About Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p style="white-space: pre-wrap; font-family: inherit;">
+    I am a junior web designer practicing HTML, Django and CSS.
+    Aged 21 years old, and this is my first website. Currently,
+    I am practicing on figuring out how Django works.
+    I am capable of doing basic coding, and understanding what I make.
+
+    I have interests in being in the cybersecurity field, as I take great 
+    interest in keeping sensitive information safe.
+
+    My goal is that I want to at learn how code works. How to understand it
+    so that simple reading can give me an idea on how it works. That way, I 
+    can be a capable coder.
+    </p>
+  </section>
+
+  <!-- End About Section -->
+
+  <!-- Skill Section -->
+<section class="w3-padding-64 w3-content w3-text-light-grey" id="skills">
+  <h2 class="w3-padding-16 w3-content w3-text-light-grey">My Skills</h2>
+  <hr style="width:200px" class="w3-opacity">
+    <p class="w3-wide">Coding</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:60%"></div>
+    </div>
+    <p class="w3-wide">Web Design</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:35%"></div>
+    </div>
+</section>
+
+  <!-- Portfolio Section -->
+<section class="w3-padding-64 w3-content" id="projects">
+  <h2 class="w3-text-light-grey">My Projects</h2>
+  <hr style="width:200px" class="w3-opacity">
+
+  <div class="project-grid">
+    {% for project in projects %}
+      {% if project.image %}
+      <div class="project-card">
+        <p>{{ project.title }}</p>
+        <img src="{{ project.image.url }}" alt="{{ project.title }}" class="project-image">
+        <pre style="white-space: pre-wrap; font-family: inherit;">{{ project.description }}</pre>
+      </div>
+      {% endif %}
+    {% empty %}
+      <p>No projects yet.</p>
+    {% endfor %}
+  </div>
+</section>
+  <!-- End Portfolio Section -->
+
+  <!-- Education Section -->
+  <section class="w3-content w3-justify w3-text-light-grey w3-padding-63" id="education">
+    <h2 class="w3-text-white">My Education</h2>    
+    <hr style="width:200px" class="section-line1"> 
+    <p style="white-space: pre-wrap; font-family: inherit;">
+      I go to school at Negros Oriental State University.
+      Located in Bayawan City. 
+      I am a third year, almost fourth year college student.
+    </p>
+    <img src="{% static 'main/images/school.png' %}" alt="edu" class="edu-image">
+  </section>
+
+  <!-- Contact Section -->
+  <section class="w3-padding-64 w3-content w3-text-light-grey" id="contacts">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Negros Oriental, Philippines</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +639265192301</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: nj@gmail.com</p>
+    </div><br>
+    <p>Let's get in touch. Send me a message.</p>
+  <!-- End Contact Section -->
+  </section>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</section>
+
+</body>
+</html>
